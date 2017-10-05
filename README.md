@@ -1,6 +1,5 @@
 # php_piscine
-Already we'll all float on
-
+Already we'll all float on \n
 Now don't you worry we'll all float on alright
 
 Already we'll all float on alright
