@@ -1,0 +1,98 @@
+  body {
+    background: #E6E6FA;
+	padding : 25px;
+  }
+  table {
+    display: table;
+    border-collapse:collapse;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+
+  }
+  h1{
+    width: 100%;
+    height: 12%;
+    color: #800020;
+	text-align: center;
+	font-family: Roboto, Georgia;
+  }
+  img{
+    width: 40%;
+    height: 30%;
+    margin: auto;
+    display: block;
+  }
+  .period {
+    position: relative;
+    margin: auto;
+    margin-right: -1px;
+
+  }
+  .period-row{
+    clear: both;
+    height: 5%;
+  }
+  .box{
+    float:left;
+    position: relative;
+    width: 5.55%;
+    height: 100%;
+    display: table-cell;
+    border-style: solid;
+    border-width: thin;
+    padding-left: 5px;
+    padding-right: 5px;
+    box-sizing: border-box;
+  }
+  .empty {
+    border: none;
+  }
+  .element {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 4px;
+    right: 2px;
+    text-align: center;
+    font-size: 15px;
+    font-size: 1.2vw;
+  }
+  .Symbol{
+    position: absolute;
+    top: 50%;
+    left: 0px;
+    right: 0px;
+    margin-top: -4px;
+    font-size: 16px;
+    height: 30px;
+    line-height: 1;
+    font-weight: : bold;
+    font-size: 15px;
+    font-size: 1.2vw;
+    font-family: Roboto, Georgia;
+  }
+      
+  .Atomic_Mass{
+    position: relative;
+    font-size: 8px;
+    float: right;
+    font-style: italic;
+    vertical-align: top;
+    font-size: .7vw;
+    font-family: Roboto, Georgia;
+  }
+      
+  .Atomic_Nr{
+    position: relative;
+    font-size: 8px;
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    font-family: Roboto, Georgia;
+    font-size: .7vw;
+  }
+      
+  .Orange{
+    background-color: #ffc266;
+  }
