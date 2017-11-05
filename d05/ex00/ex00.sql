@@ -1,1 +1,1 @@
-CREATE TABLE db_kromain
+CREATE DATABASE IF NOT EXISTS db_kromain
