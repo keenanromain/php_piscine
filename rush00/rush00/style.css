@@ -1,0 +1,275 @@
+* {
+	/* May need to add other types for compatibility */
+	box-sizing: border-box;
+	transition: .25s ease-in-out;
+	margin: 0;
+	padding: 0;
+	font-family: 'Lato', sans-serif;
+}
+
+html,
+body {
+	position: relative;
+	font-weight: 400;
+	font-size: 16px;
+	height: 100%;
+	overflow: hidden;
+}
+
+.page-title {
+	text-align: center;
+	font-weight: 100;
+	max-width: 100%;
+	display:block; 
+	height: auto;
+}
+
+.gallery {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	margin-top: 20px;
+}
+
+.gallery-item {
+	margin: 20px;
+	border: 5px solid #FFF;
+}
+
+.gallery-item .thumbnail {
+	border: 5px solid #FFF;
+}
+
+.gallery-item p {
+	text-align: center;
+	margin: 0;
+}
+
+header {
+	width: 100%;
+	position: fixed;
+	left: 0px;
+	background: #efefef;
+	padding: 10px 10px 10px 50px;
+	font-size: 30px;
+	line-height: 50px;
+	z-index: 0;
+}
+
+.footer {
+	font-size: 12px;
+	bottom: 10px;;
+	padding: 8px 18px;
+	border: 1px solid #204156;
+}
+
+button { padding:4px; }
+
+.page-description {
+	border: 1px solid #000;
+	text-align: center;
+	padding: 30px;
+}
+
+#drawer li {
+	transition: .15s ease-in-out;
+	line-height: 60px;
+	width: 100%;
+	padding: 10px 0 10px 20px;
+	margin-bottom: 5px;
+}
+
+#drawer li:hover {
+	background-color: #204156;
+	text-decoration: none;
+	list-style: none;
+	padding: 10px 0 10px 25px;
+	margin-bottom: 0px;
+}
+
+#drawer li a:visited { color: #CCCCCC; }
+
+#drawer li a:link { color: #CCCCCC; }
+
+#drawer-toggle {
+  position: absolute;
+  opacity: 0;
+}
+
+#drawer {
+	position: fixed;
+	top: 0;
+	left: -150px;
+	height: 100%;
+	width: 150px;
+	background: #2f2f2f;
+	overflow-x: hidden;
+	overflow-y: scroll;
+	padding: 0;
+}
+
+#drawer-toggle-label {
+	user-select: none;
+	left: 0px;
+	height: 50px;
+	width: 50px;
+	top: 10px;
+	display: block;
+	position: fixed;
+	background: rbga(255, 255, 255, .0);
+	z-index: 1;
+}
+
+#drawer-toggle-label:before {
+	content: '';
+	display: block;
+	position: absolute;
+	height: 2px;
+	width: 24px;
+	background: #8d8d8d;
+	left: 13px;
+	top: 18px;
+	box-shadow: 0 6px 0 #8d8d8d, 0 12px 0 #8d8d8d;
+}
+
+#drawer-toggle:checked ~ #drawer-toggle-label {
+	height: 100%;
+	width: calc(100% - 150px);
+	background: rgba(255, 255, 255, 0.8);
+}
+
+#drawer-toggle:checked ~ #drawer-toggle-label,
+#drawer-toggle:checked {
+	left: 150px;
+}
+
+#drawer-toggle:checked ~ #drawer {
+	left: 0px;
+}
+
+#drawer-toggle:checked ~ #page-content {
+	margin-left: 150px;
+}
+
+#drawer-toggle:checked ~ #drawer-toggle-label {
+	height: 100%;
+	width: calc(100% - 150px);
+	background: rgba(255, 255, 255, .5);
+}
+
+#drawer-toggle:checked ~ #drawer-toggle-label,
+#drawer-toggle:checked ~ header {
+	left: 150px;
+}
+
+#page-content {
+	margin-left: 0px;
+	margin-top: 50px;
+	width: 100%;
+	height: calc(100% - 50px);
+	overflow-x: hidden;
+	overflow-y: scroll;
+	padding: 20px;
+}
+
+#view {
+	margin-top: 15px;
+}
+
+#item {
+	transition: .15s ease-in-out;
+	flex-shrink: 0;
+	width: 200px;
+	height: 225px;
+	border: 1px solid #dfdfdf;
+	background: #efefef;
+	padding: 10px;
+	margin: 5px;
+}
+
+#item #cont {
+	text-align: center;
+}
+
+#item img {
+	width: 125px;
+	height: 125px;
+	padding-bottom: 10px;
+	padding-left: auto;
+}
+
+#item a:link, a:visited {
+	color: black;
+	text-decoration: none;
+}
+
+.item-content {
+	margin-top: auto;
+	bottom: 0px;
+}
+
+#item:hover {
+	background-color: #dadada;
+	border: 1px solid #efefef;
+	width: 250px;
+	height: 300px;
+	box-shadow: 3px 3px 3px #bfbfbf;
+}
+
+#item:hover #desc {
+	height: 100%;
+	width: 100%;
+}
+
+#item #title { font-weight: 400; }
+#item #desc { font-weight: 300; }
+
+
+#item #add-to-cart {
+	border: 1px solid #A4D855;
+	background-color: #B1D866;
+	color: #ffffff;
+	float: right;
+}
+
+.truncate {
+	width: 125px;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+#add-to-cart:hover {
+	border: 10px solid #A4D855;
+	background-color: #B4D888;
+	padding-right: 4px;
+	color: #ffffff;
+	float: right;
+}
+
+.store {
+	display: flex;
+	flex-direction: row	;
+	flex-wrap: wrap;
+}
+
+#profile {
+	height: 25vmin;
+	width: 25vmin;
+}
+
+#profile img {
+	margin: 10px;
+	border-radius: 100%;
+	height: 80%;
+	width: 80%;
+}
+
+#profile #name { padding-left: 10px; }
+
+#profile #logout-button {
+	margin-left: 10px;
+	height: 25px;
+}
+
+#help-text { font-size: 14px; }

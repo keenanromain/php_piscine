@@ -1,0 +1,1 @@
+a:2:{s:4:"meta";a:1:{s:9:"numOrders";i:2;}s:6:"orders";a:2:{i:0;s:1:"0";i:2;a:3:{s:6:"basket";a:2:{s:5:"items";a:1:{s:12:"medamazonpkg";a:4:{s:3:"qty";i:2;s:5:"price";s:2:"40";s:4:"name";s:27:"Medium Sized Amazon Package";s:7:"barcode";s:12:"medamazonpkg";}}s:5:"total";i:80;}s:4:"user";s:4:"toto";s:10:"datePlaced";i:1502079070;}}}
